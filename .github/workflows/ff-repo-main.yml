@@ -12,4 +12,5 @@ jobs:
       with:
         repo: 'macports-ports'
         op-token: ${{ secrets.OP_SERVICE_ACCOUNT_TOKEN }}
+        branch: 'master'
   
