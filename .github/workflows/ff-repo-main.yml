@@ -3,11 +3,12 @@ on:
 
 jobs:
   ff_mp:
+    name: Fast Forward Macports
     runs-on: ubuntu-latest
     steps:  
-    - name: Fast Forward Macports
+    - name: Get Repositories
       uses: markemer/upstream-updates@main
       with:
-        repo: 'markemer/macports'
+        repo: 'macports'
         op-token: ${{ secrets.OP_SERVICE_ACCOUNT_TOKEN }}
   
