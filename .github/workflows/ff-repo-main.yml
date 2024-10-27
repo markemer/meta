@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:  
     - name: Fast Forward Macports
-      uses: markemer/update-upstream@main
+      uses: markemer/upstream-updates@main
       with:
         repo: 'markemer/macports'
         op-token: ${{ secrets.OP_SERVICE_ACCOUNT_TOKEN }}
