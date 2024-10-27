@@ -1,3 +1,4 @@
+name: "Fast Forward Forks"
 on:
   workflow_dispatch:
 
@@ -6,7 +7,7 @@ jobs:
     name: Fast Forward Macports
     runs-on: ubuntu-latest
     steps:  
-    - name: Get Repositories
+    - name: Merge upstream
       uses: markemer/upstream-updates@main
       with:
         repo: 'macports-ports'
