@@ -9,6 +9,6 @@ jobs:
     - name: Get Repositories
       uses: markemer/upstream-updates@main
       with:
-        repo: 'macports'
+        repo: 'macports-ports'
         op-token: ${{ secrets.OP_SERVICE_ACCOUNT_TOKEN }}
   
