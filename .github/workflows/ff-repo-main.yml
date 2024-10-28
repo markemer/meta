@@ -1,6 +1,8 @@
 name: "Fast Forward Forks"
 on:
   workflow_dispatch:
+  schedule:
+  - cron: "15 * * * *"
 
 jobs:
   ff_mp:
@@ -8,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:  
     - name: Merge upstream
-      uses: markemer/upstream-updates@main
+      uses: markemer/upstream-updates@v0.0.1
       with:
         repo: 'macports-ports'
         op-token: ${{ secrets.OP_SERVICE_ACCOUNT_TOKEN }}
