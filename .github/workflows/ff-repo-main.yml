@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:  
     - name: Merge upstream
-      uses: markemer/actions/upstream-updates@v0.0.2
+      uses: markemer/actions/upstream-updates@v0.0.3
       with:
         repo: 'macports-ports'
         op-token: ${{ secrets.OP_SERVICE_ACCOUNT_TOKEN }}
