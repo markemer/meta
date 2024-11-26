@@ -1,0 +1,16 @@
+name: "Send Message"
+on:
+  workflow_dispatch:
+
+jobs:
+  sms:
+    name: Send SMS
+    runs-on: ubuntu-latest
+    steps:
+    - name: Send SMS
+      uses: markemer/actions/sms-twilio@main
+      with:
+        op-token: ${{ secrets.OP_SERVICE_ACCOUNT_TOKEN }}
+        fromPhoneNumber: ${{ secrets.FROM_NUMBER }}
+        toPhoneNumber: ${{ secrets.TO_NUMBER }}
+        message: "Hello, World!"
