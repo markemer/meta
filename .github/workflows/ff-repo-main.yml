@@ -8,11 +8,10 @@ jobs:
   ff_mp:
     name: Fast Forward Macports
     runs-on: ubuntu-latest
-    steps:  
+    steps:
     - name: Merge upstream
-      uses: markemer/actions/upstream-updates@v0.0.3
+      uses: markemer/actions/upstream-updates@v0.0.4
       with:
         repo: 'macports-ports'
         op-token: ${{ secrets.OP_SERVICE_ACCOUNT_TOKEN }}
         branch: 'master'
-  
