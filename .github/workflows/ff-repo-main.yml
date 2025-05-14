@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Merge upstream
-      uses: rohrwerkzeuge/upstream-updates@1.0.0
+      uses: rohrwerkzeuge/upstream-updates@1.0.1
       with:
         repo: 'macports-ports'
         op-token: ${{ secrets.OP_SERVICE_ACCOUNT_TOKEN }}
