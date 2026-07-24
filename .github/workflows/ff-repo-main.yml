@@ -10,13 +10,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Merge Macports Ports Upstream
-      uses: rohrwerkzeuge/upstream-updates@5cf0a1a84841648d654a489eff07e88a08e38094 # 1.4.0
+      uses: rohrwerkzeuge/upstream-updates@5f82a5aebaa5e1ad071e83f02260a9a847f1f25c # 1.5.1
       with:
         repo: 'macports-ports'
         op-token: ${{ secrets.OP_SERVICE_ACCOUNT_TOKEN }}
         branch: 'master'
     - name: Merge Macports Base Upstream
-      uses: rohrwerkzeuge/upstream-updates@5cf0a1a84841648d654a489eff07e88a08e38094 # 1.4.0
+      uses: rohrwerkzeuge/upstream-updates@5f82a5aebaa5e1ad071e83f02260a9a847f1f25c # 1.5.1
       with:
         repo: 'macports-base'
         op-token: ${{ secrets.OP_SERVICE_ACCOUNT_TOKEN }}
